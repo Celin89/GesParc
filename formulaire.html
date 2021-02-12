@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onClick</title>
+    <script>
+     window.onload = function(){ 
+
+        document.forms.le_form.onsubmit = function(){
+
+          var result = false ;
+           
+          if(document.forms.le_form.elements.nom.value !="")  
+                 result = true ;
+            
+             return result;
+        }  
+     }   
+      
+    </script>
+</head>
+<body>
+    <form name="le_form">
+        <input type="text" name="nom"  placeholder="nom"></br>
+        <input type="text" name="prenom" placeholder="prenom"></br>
+        <input type="text" name="email" placeholder="email"></br>
+        <input type="button" value="envoyer" id="btn_submit"></br>
+    </form>
+</body>
+</html>

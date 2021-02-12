@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script> 
+window.document.forms['le_form'].le_champ_text.value = "Nouvelle valeur " ;
+
+    </script>
+</head>
+<body>
+  <form name="le_form" action="">
+    <input type="text" name="le_champ_text">
+  </form>   
+ 
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="le_titre">Un titre</h1>
+    
+  <script type="text/javascript"> 
+    var le_form = document.getElementById("le_titre") ;
+
+    console.log(le_titre.innerHTML);
+
+    le_titre.innerHTML = " Un autre titre" ;
+
+  </script>
+ 
+</body>
+</html>
+
+

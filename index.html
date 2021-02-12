@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script> 
+      window.onload = function(){
+
+       var btn = document.getElementById('btn') ;
+
+       btn.onClick = function(){
+
+        var le_paragraphe = document.getElementById("le_paragraphe") ;
+
+        if (le_paragraphe.style.backgroundColor =="hidden"){
+
+          le_paragraphe.style.backgroundColor ="visible" ;
+         }
+
+         else le_paragraphe.style.backgroundColor ="hidden" ;
+
+       }
+
+      };
+  
+    </script>
+</head>
+<body>
+
+<p id=""></p>
+<form name="le_form">
+  <input type="text" name="nom"  placeholder="nom"></br>
+  <input type="text" name="prenom" placeholder="prenom"></br>
+  <input type="text" name="email" placeholder="email"></br>
+  <input type="button" value="envoyer" id="btn_submit"></br>
+</form>
+ 
+</body>
+</html>
